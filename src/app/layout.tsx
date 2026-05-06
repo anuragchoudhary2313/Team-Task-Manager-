@@ -2,17 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { getSession } from "@/lib/auth";
-import { Manrope, Space_Grotesk } from "next/font/google";
-
-const bodyFont = Manrope({
-  subsets: ["latin"],
-  variable: "--font-body",
-});
-
-const displayFont = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-display",
-});
 
 export const metadata: Metadata = {
   title: "TaskFlow | Team Task Manager",
@@ -34,7 +23,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${bodyFont.variable} ${displayFont.variable} app-shell`}>
+      <body className="app-shell">
         <Navbar user={navbarUser} />
         <main className="app-main animate-fade-in">
           {children}

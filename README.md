@@ -136,7 +136,6 @@ cp .env.example .env
 
 Fill `.env` values:
 - `DATABASE_URL`: Neon pooled URL (contains `-pooler`)
-- `DIRECT_URL`: Neon direct URL (non-pooler host)
 - `JWT_SECRET`: long random secret
 - `NEXT_PUBLIC_APP_URL`: `http://localhost:3000` for local
 
@@ -161,7 +160,6 @@ Open `http://localhost:3000`.
 
 Set these environment variables in your hosting platform:
 - `DATABASE_URL`
-- `DIRECT_URL`
 - `JWT_SECRET`
 - `NEXT_PUBLIC_APP_URL`
 
@@ -177,7 +175,6 @@ Use:
 3. Select this repo and service root.
 4. Add environment variables in Railway service:
 - `DATABASE_URL` (Neon pooled URL, usually `-pooler` host)
-- `DIRECT_URL` (Neon direct URL, non-pooler host)
 - `JWT_SECRET` (long random secret)
 - `NEXT_PUBLIC_APP_URL` (your Railway public domain or custom domain)
 5. Deploy.

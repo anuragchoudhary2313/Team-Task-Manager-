@@ -14,4 +14,4 @@ FROM base AS runner
 ENV NODE_ENV=production
 COPY --from=builder /app ./
 EXPOSE 3000
-CMD ["sh", "-c", "npx prisma migrate deploy && npm run start"]
+CMD ["npm", "run", "start"]

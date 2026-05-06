@@ -156,7 +156,7 @@ export default async function Dashboard() {
                 <div>
                   <div className="table-title">{task.title}</div>
                   <p className="table-copy">
-                    {task.project.name} · Assigned to {task.assignedTo?.name || "Unassigned"}
+                    {task.project.name} - Assigned to {task.assignedTo?.name || "Unassigned"}
                   </p>
                 </div>
                 <TaskStatusBadge status={task.status} />
@@ -168,3 +168,4 @@ export default async function Dashboard() {
     </div>
   );
 }
+
